@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "c03727ab-c749-4db2-9b17-6c5296b9512b",
+		"name": "Connie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreatePiPoint",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"WebId\": \"F1DPyRWz1v6MMk2SL5l-R8HL_QAwAAAAQ0NIT1ctVk0xXENEVDE1OA\",\r\n\"Name\": \"CDT158\",\r\n\"Path\": \"\\\\\\\\cchow-vm1\\\\CDT158\",\r\n\"Descriptor\": \"Atmospheric Tower OH Vapor\",\r\n\"PointClass\": \"classic\",\r\n\"PointType\": \"Float32\",\r\n\"DigitalSetName\": \"\",\r\n\"EngineeringUnits\": \"DEG. C\",\r\n\"Span\": 200.0,\r\n\"Zero\": 50.0,\r\n\"Step\": false,\r\n\"Future\": false,\r\n\"DisplayDigits\": -5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44361/api/tsops",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44361",
+					"path": [
+						"api",
+						"tsops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPiPoints",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"WebId\": \"F1DPyRWz1v6MMk2SL5l-R8HL_QAwddAAAQ0NIT1ctVk0xXENEVDf1OC\",\r\n\"Name\": \"CDT158\",\r\n\"Path\": \"\\\\\\\\cchow-vm1\\\\CDT158\",\r\n\"Descriptor\": \"Atmospheric Tower OH Vapor\",\r\n\"PointClass\": \"classic\",\r\n\"PointType\": \"Float32\",\r\n\"DigitalSetName\": \"\",\r\n\"EngineeringUnits\": \"DEG. C\",\r\n\"Span\": 200.0,\r\n\"Zero\": 50.0,\r\n\"Step\": false,\r\n\"Future\": false,\r\n\"DisplayDigits\": -5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44361/api/tsops",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44361",
+					"path": [
+						"api",
+						"tsops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePiPoint",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Id\": \"4\",\r\n\"Name\": \"Test1\",\r\n\"Value\": \"123\",\r\n\"Timestamp\": \"2019-03-11T23:32:58Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44361/api/tsops",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44361",
+					"path": [
+						"api",
+						"tsops"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
